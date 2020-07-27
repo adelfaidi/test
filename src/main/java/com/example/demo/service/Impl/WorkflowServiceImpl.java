@@ -26,7 +26,12 @@ public class WorkflowServiceImpl implements WorkflowService {
 
     @Override
     public List<WorkflowDto> getWorkflowsByCategories(List<Long> ids) {
-        return workflowRepository.getWorkflowsByCategories(ids);
+        List<Workflow> workflows =  workflowRepository.getWorkflowsByCategories(ids);
+        List<WorkflowDto> workflowDtos = new ArrayList<>();
+        workflows.forEach((workflow) -> {
+            workflowDtos.add(new WorkflowDto(workflow));
+        });
+        return workflowDtos;
     }
 
     @Override
