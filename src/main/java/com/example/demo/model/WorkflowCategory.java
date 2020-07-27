@@ -1,4 +1,4 @@
-package model;
+package com.example.demo.model;
 
 import java.sql.Date;
 
@@ -14,7 +14,7 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
 @Entity
-@Table(name = "workflow-category")
+@Table(name = "workflowCategory")
 public class WorkflowCategory {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
