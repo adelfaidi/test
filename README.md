@@ -7,7 +7,7 @@ The project is based on a small web service which uses the following technologie
 
  -Spring Boot
 
- -Database Mysql (script schema.sql under resources folder for database initialization)*
+ -Database Mysql (you must create a database named 'workflow' and the system will initialize the database automatically)*
 
  -Maven
  
